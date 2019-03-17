@@ -1,0 +1,171 @@
+<html lang="en" data-dpr="1" style="font-size: 37.5px;">
+<head>
+<meta charset="UTF-8">
+<title>WiFi配置</title>
+<style>
+    html, body {
+        margin: 0;
+    }
+    .introduce {
+        width: 100%;
+    }
+    .text {
+        padding: 5px 20px 10px 20px;
+        margin-bottom: 50px;
+    }
+    .text h3 {
+        font-size: 20px;
+        color: #333333;
+    }
+    .text p {
+        font-size: 14px;
+        color: #999999;
+        margin: 5px;
+    }
+    .btnWrapper {
+        padding: 10px 15px;
+        position: fixed;
+        display: flex;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ffffff;
+    }
+    .btnWrapper button,.bt {
+        background-color: #06C1AE;
+        border-radius: 3px;
+        width: 100%;
+        padding: 11px;
+        font-size: 16px;
+        color: #ffffff;
+        border: none;
+    }
+    .btnWrapper button.disabled {
+        background-color: lightgray;
+    }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<!-- <script>
+    !function(){var a="@charset \"utf-8\";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:underline}ins,a{text-decoration:none}",b=document.createElement("style");if(document.getElementsByTagName("head")[0].appendChild(b),b.styleSheet)b.styleSheet.disabled||(b.styleSheet.cssText=a);else try{b.innerHTML=a}catch(c){b.innerText=a}}();!function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=(a.navigator.appVersion.match(/android/gi),a.navigator.appVersion.match(/iphone/gi)),q=a.devicePixelRatio;i=p?q>=3&&(!i||i>=3)?3:q>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var r=e.createElement("div");r.appendChild(g),e.write(r.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+</script> -->
+    <style>
+        /* @charset "utf-8"; */
+        html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:underline}ins,a{text-decoration:none}
+    </style>
+</head>
+<body style="font-size: 12px;">
+    <div id="pay">
+        <img class="introduce" src="./img.jpg" alt="美团收款音响">
+        <div class="text">
+            <h3>配置步骤</h3>
+            <p>1.&nbsp;确认手机已连接Wi-Fi</p>
+            <p>2.&nbsp;请打开设备上的开关</p>
+            <p>3.&nbsp;请点按设备上的配置按钮</p>
+            <p>4.&nbsp;等待语音提示"设备配网中"</p>
+    
+            <!-- <h3>配置步骤</h3>
+            <p>1.&nbsp;确认音箱已经开机</p>
+            <p>2.&nbsp;同时长按 重复播报 和 音量+ 按钮，进行热点配网，松开后音箱播报：“热点配网模式”</p>
+            <p>3.&nbsp;热点配网模式下，用手机搜索WIFI：“meituan-xxxx”（xxxx为随机4位字符）</p>
+            <p>4.&nbsp;连接成功后，打开手机自带浏览器，输入：192.168.1.1 跳转到页面输入WIFI名称和密码，点击提交</p>
+            <p>5.&nbsp;网络连接成功会有语音提示：“网络连接成功”，同时绿灯长亮, 此时联网成功</p> -->
+        </div>
+        <div class="btnWrapper">
+                <button class="disabled">开始配置</button> 
+        </div>
+    </div>
+    <div id="success" style="height:100vh;text-align: center; display: none;justify-content:center;align-items:center;">
+        <div>
+            <!-- <div style="width: 180px;height: 180px;border-radius: 50%;overflow: hidden;margin: 0 auto;"> -->
+            <div style="width: 40vw;overflow: hidden;margin: 0 auto;">
+                <!-- <img class="introduce" src="./success.jpg" alt="美团收款音响" style="width: 300px;height: 300px;background-color: pink"> -->
+                <img class="introduce" src="./success.jpg" alt="美团收款音响">
+            </div>
+            <p style="font-size:40px;text-align:center;line-height:100px;">配网成功</p>
+            <div>
+                <button class="bt" onclick="WeixinJSBridge.call('closeWindow')" style="width:90vw;margin-top: 40px;margin-bottom: 50px;background-color: rgb(53,192,1)">完成</button> 
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var btnEle = document.querySelector('.btnWrapper button');
+        $.ajax({
+                type: "GET",
+                url: "http://airkiss.rinlink.com/wechartApi/getToken",
+                dataType: "json",
+                success: function(data){
+                    var weixinConfig = {
+                        // 开启内测接口调用，注入wx.invoke方法
+                        beta : true,
+                        // 开启调试模式
+                        debug : false,
+                        // 第三方app唯一标识
+                        appId : data.appid,
+                        // 生成签名的时间戳
+                        timestamp : data.timestamp,
+                        // 生成签名的时间戳
+                        nonceStr : data.noncestr,
+                        // 签名
+                        signature : data.signature,
+                        // 需要使用的jsapi列表
+                        jsApiList : ['configWXDeviceWiFi']
+                    };
+
+                    wx.config(weixinConfig);
+
+                    wx.ready(function () {
+                        wx.checkJsApi({
+                            jsApiList: ['configWXDeviceWiFi'],
+                            success: function() {
+                                btnEle.className = '';
+                            }
+                        });
+                    });
+                }
+        });
+
+        // document.body.innerHTML='<div></div>';
+       
+        // var second = 5;
+        
+        // function closes(){
+        //     if(second===0){
+        //         WeixinJSBridge.call('closeWindow');
+        //     }else{
+        //         document.body.innerHTML='配置成功,'+second+'秒后自动关闭界面';
+        //         document.body.style="font-size:20px;font-weight:bold;text-align:center;line-height:100vh;"
+        //         second--;
+        //         setTimeout(closes,1000);
+        //     }
+        // }
+         
+
+        btnEle && btnEle.addEventListener('click', function () {
+            if (btnEle.className.indexOf('disabled') !== -1) {
+                return;
+            }
+            wx.invoke('configWXDeviceWiFi', {}, function(res) {
+                var err_msg = res.err_msg;
+                if (err_msg == 'configWXDeviceWiFi:ok') {
+                    // setTimeout(closes,1000);
+                    document.getElementById('pay').style.display='none';
+                    document.getElementById('success').style.display='flex';
+                    btnEle.className = 'disabled';
+                }else if (err_msg == 'configWXDeviceWiFi:cancel') {
+                    alert('已取消配网!');
+                } else if (err_msg != 'configWXDeviceWiFi:cancel') {
+                    alert('配网失败，请重新配置！');
+                }
+            });
+        });
+
+        wx.error(function (res) {
+            console.log(res);
+        });
+
+    </script>
+
+</html>
